@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add 'selected' to the clicked button
             btn.classList.add('selected');
             const angle = btn.getAttribute('data-angle');
-            console.log("angel--", angle)
             layout.style.transform = `rotate(${angle}deg)`;
         });
     });
 });
+
 
