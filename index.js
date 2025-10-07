@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const video = document.querySelector('.layout');
+    const layout = document.querySelector('.layout');
     const buttons = document.querySelectorAll('.button-bar button');
     buttons.forEach(btn => {
         btn.addEventListener('click', function() {
@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
             btn.classList.add('selected');
             const angle = btn.getAttribute('data-angle');
             console.log("angel--", angle)
-            video.style.transform = `rotate(${angle}deg)`;
+            layout.style.transform = `rotate(${angle}deg)`;
         });
     });
 });
+
